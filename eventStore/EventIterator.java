@@ -1,10 +1,7 @@
-package net.intelie.challenges;
+package eventStore;
 
-/**
- * An iterator over an event collection.
- */
-public interface EventIterator extends AutoCloseable {
-    /**
+public interface EventIterator {
+	/**
      * Move the iterator to the next event, if any.
      *
      * @return false if the iterator has reached the end, true otherwise.
@@ -27,4 +24,5 @@ public interface EventIterator extends AutoCloseable {
      *                               or its last result was {@code false}.
      */
     void remove();
+
 }

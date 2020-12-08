@@ -1,9 +1,6 @@
-package event;
+package eventStore;
 
-/**
- * This is just an event stub, feel free to expand it if needed.
- */
-public class Event{
+public class Event {
     private final String type;
     private final long timestamp;
 
